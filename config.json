@@ -1,0 +1,26 @@
+{
+  "progress": {
+    "width": 60,
+    "complete": "-",
+    "incomplete": " "
+  },
+  "timers": {
+    "work": 1500,
+    "short": 300,
+    "long": 600
+  },
+  "questions": {
+    "work": {
+      "type": "list",
+      "name": "next",
+      "message": "Choose:",
+      "choices": ["Short rest", "Long rest", "Quit"]
+    },
+    "rest": {
+      "type": "list",
+      "name": "next",
+      "message": "Choose:",
+      "choices": ["Work", "Quit"]
+    }
+  }
+}
