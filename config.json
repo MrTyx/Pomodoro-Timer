@@ -7,20 +7,42 @@
   "timers": {
     "work": 1500,
     "short": 300,
-    "long": 600
+    "long": 1800
   },
   "questions": {
     "work": {
       "type": "list",
       "name": "next",
       "message": "Choose:",
-      "choices": ["Short rest", "Long rest", "Quit"]
+      "choices": [
+        {
+          "name": "Short Break (5m)",
+          "value": "short"
+        },
+        {
+          "name": "Long Break (30m)",
+          "value": "long"
+        },
+        {
+          "name": "Quit",
+          "value": "quit"
+        }
+      ]
     },
     "rest": {
       "type": "list",
       "name": "next",
       "message": "Choose:",
-      "choices": ["Work", "Quit"]
+      "choices": [
+        {
+          "name": "Work (25m)",
+          "value": "work"
+        },
+        {
+          "name": "Quit",
+          "value": "quit"
+        }
+      ]
     }
   }
 }

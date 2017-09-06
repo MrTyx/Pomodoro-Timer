@@ -18,13 +18,13 @@ const work = () => {
     ding();
     inquirer.prompt([config.questions.work]).then(answers => {
       switch (answers.next) {
-        case "Short rest":
+        case "short":
           rest(config.timers.short);
           break;
-        case "Long rest":
+        case "long":
           rest(config.timers.long);
           break;
-        case "Quit":
+        case "quit":
         default:
           return;
           break;
@@ -47,10 +47,10 @@ const rest = time => {
     ding();
     inquirer.prompt([config.questions.rest]).then(answers => {
       switch (answers.next) {
-        case "Work":
+        case "work":
           work();
           break;
-        case "Quit":
+        case "quit":
         default:
           return;
           break;
